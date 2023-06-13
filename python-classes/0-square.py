@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-# create a class
+"""
+create a class
+"""
+
+
 class Square:
-    # create a method
+    """
+    create a method
+    """
     pass
