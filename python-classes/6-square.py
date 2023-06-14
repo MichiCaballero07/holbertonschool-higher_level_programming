@@ -23,11 +23,11 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self, value):
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         if type(value) != tuple and len(value) != 2:
@@ -44,6 +44,6 @@ class Square:
         if self.__size == 0:
             print()
         if self.__position[1] > 0:
-            print("\n" * (self.__position[1] - 1)) 
+            print("\n" * (self.__position[1] - 1))
         for _ in range(self.__size):
-            print("#" * self.__position[0] + "#" * self.__size)
+            print(" " * self.__position[0] + "#" * self.__size)
