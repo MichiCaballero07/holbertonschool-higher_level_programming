@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Doc
+Module that have a function that adds 2 integers.
 """
 
 
 def add_integer(a, b=98):
     """
-    Doc
+    Function that adds 2 integers.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
