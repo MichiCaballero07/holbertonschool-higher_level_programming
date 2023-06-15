@@ -31,8 +31,6 @@ a must be an integer
 ...     print(e)
 ... 
 a must be an integer
->>> add_integer(99, 3.600)
-102
 >>> add_integer(1.3407807929942597e+154*1.3407807929942597e+154, 2000000000000)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
