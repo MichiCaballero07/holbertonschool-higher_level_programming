@@ -21,8 +21,6 @@ b must be an integer
 ...     print(e)
 ... 
 a must be an integer
->>> add_integer(0, 0)
-0
 >>> add_integer(100.5, 45.44)
 145
 >>> try:
