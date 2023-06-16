@@ -27,4 +27,3 @@ def matrix_divided(matrix, div):
     """print new matrix"""
     matrixNew = [[round(num / div, 2) for num in row] for row in matrix]
     return matrixNew
-    
