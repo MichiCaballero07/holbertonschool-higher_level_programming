@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""Documentation"""
+"""
+Documentation
+"""
 
 
 class MyList(list):
-    """class MyList"""
+    """
+    class MyList
+    """
     def print_sorted(self):
-        """public function print_sorted"""
+        """
+        public function print_sorted
+        """
         print(sorted(self))
