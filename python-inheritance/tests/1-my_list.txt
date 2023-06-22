@@ -56,7 +56,7 @@ Traceback (most recent call last):
 TypeError: '<' not supported between instances of 'str' and 'int'
 
 test 05
----------
+------------------------------------------
 number to MyList :
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -65,3 +65,8 @@ number to MyList :
 >>> my_list.append(0)
 >>> my_list.print_sorted()
 [-4, 0, 1, 3]
+
+test 06
+-----------------------------------------
+my_list = []
+print_sorted(my_list)
