@@ -89,3 +89,11 @@ add float to my_list:
 
 >>> my_list.print_sorted()
 [1, 2, 3.5]
+
+Test 08
+___________________________________________
+Clear the instance for an empty list:
+>>> my_list = MyList()
+>>> my_list.clear()
+>>> my_list
+[]
