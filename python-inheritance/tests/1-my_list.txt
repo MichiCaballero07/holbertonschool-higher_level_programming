@@ -121,3 +121,17 @@ Test 11
 --------------------------------
 >>> print(type(my_list))
 <class '1-my_list.MyList'>
+
+Test 12
+--------------------------------
+>>> isinstance(my_list, list)
+True
+
+Test 13
+--------------------------------
+>>> my_list = MyList()
+>>> my_list.append(3)
+>>> my_list.print_sorted()
+[3]
+>>> print(my_list)
+[3]
