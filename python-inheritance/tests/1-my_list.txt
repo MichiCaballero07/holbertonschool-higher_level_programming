@@ -54,3 +54,13 @@ string to MyList :
 Traceback (most recent call last):
 ...
 TypeError: '<' not supported between instances of 'str' and 'int'
+
+test 05
+---------
+boolean to MyList :
+>>> my_list = MyList()
+>>> my_list.append(True)
+>>> my_list.append(False)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[False, True, 2]
