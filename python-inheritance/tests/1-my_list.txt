@@ -1,151 +1,66 @@
 ===========================
 1-my_list.py
 ===========================
-
 Using ``1-my_list.py``
----------------------------
-Import module:
----------------------------
+----------------------
+Public instance method: def print_sorted(self): ``that prints the list, but sorted (ascending sort)``.
+>>> my_list = __import__('1-my_list').MyList
+
+Insert digits into the list
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
-
-Test 00
---------------------------------------------------------
-Print an the empty method list:
->>> my_list.print_sorted()
-[]
->>> print(my_list)
-[]
-
-Test 01
---------------------------------------------------------
-number to MyList :
 >>> my_list.append(1)
->>> my_list.append(3)
 >>> my_list.append(4)
-
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
 >>> print(my_list)
-[1, 3, 4]
-
+[1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
-[1, 3, 4]
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-
-
-
-Test 02
----------
-number to MyList :
->>> my_list = MyList()
->>> my_list.append(4)
->>> my_list.append(3)
->>> my_list.append(2)
->>> my_list.append(0)
-
+Empty list
+>>> MyList = __import__('1-my_list').MyList
+>>> a = []
+>>> my_list = MyList(a)
 >>> my_list.print_sorted()
-[0, 2, 3, 4]
-
-Test 03
----------
-string to MyList :
->>> my_list = MyList()
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(-1)
->>> my_list.print_sorted()
-[-1, 2, 3]
-
-Test 04
----------
-string to MyList :
->>> my_list = MyList()
->>> my_list.append(2)
->>> my_list.append('a')
->>> my_list.print_sorted()
-Traceback (most recent call last):
-...
-TypeError: '<' not supported between instances of 'str' and 'int'
-
-Test 05
-------------------------------------------
-number to MyList :
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(3)
->>> my_list.append(-4)
->>> my_list.append(0)
->>> my_list.print_sorted()
-[-4, 0, 1, 3]
-
-Test 06
------------------------------------------
-my_list = []
-print_sorted(my_list)
-
-test 07
------------------------------------------
-add float to my_list:
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(3.5)
->>> my_list.append(2)
-
->>> my_list.print_sorted()
-[1, 2, 3.5]
-
-Test 08
---------------------------------
-Clear the instance for an empty list:
->>> my_list.clear()
->>> my_list
 []
 
-test 09
---------------------------------
-Returns a new list:
+Passed a list
+>>> MyList = __import__('1-my_list').MyList
+>>> a = [1, 9, 4]
+>>> my_list = MyList(a)
+>>> my_list.print_sorted()
+[1, 4, 9]
+
+Unique number
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1]
+>>> print(my_list)
+[1]
+
+Same number
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list2 = MyList()
+>>> my_list2.append(1)
+>>> my_list2.append(1)
+>>> my_list2.append(1)
+>>> my_list2.append(1)
+>>> my_list2.print_sorted()
+[1, 1, 1, 1]
+
+Negative numbers
+>>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 >>> my_list.append(5)
->>> my_list.append(4)
->>> my_list.append(3)
+>>> my_list.append(1)
+>>> my_list.append(-1)
+>>> my_list.append(51)
+>>> my_list.append(-5)
 >>> my_list.print_sorted()
-[3, 4, 5]
-
-Test 10
---------------------------------
->>> my_list = MyList([1, 2, 3])
-
->>> my_list.print_sorted()
-[1, 2, 3]
-
-Test 11
---------------------------------
->>> print(type(my_list))
-<class '1-my_list.MyList'>
-
-Test 12
---------------------------------
->>> isinstance(my_list, list)
-True
-
-Test 13
---------------------------------
->>> my_list = MyList()
->>> my_list.append(3)
->>> my_list.print_sorted()
-[3]
->>> print(my_list)
-[3]
-
-Test 14 
---------------------------------
->>> my_list.append(int('inf'))
-Traceback (most recent call last):
-ValueError: invalid literal for int() with base 10: 'inf'
-
-Test 15
---------------------------------
->>> my_list = MyList()
->>> my_list.append(NULL)
-Traceback (most recent call last):
-NameError: name 'NULL' is not defined
-
+[-5, -1, 1, 5, 51]
