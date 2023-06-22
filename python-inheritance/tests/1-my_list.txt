@@ -93,7 +93,6 @@ add float to my_list:
 Test 08
 ___________________________________________
 Clear the instance for an empty list:
->>> my_list = MyList()
 >>> my_list.clear()
 >>> my_list
 []
