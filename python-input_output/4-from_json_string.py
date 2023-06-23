@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Import the json module"""
-    
-    
+
+
 import json
 
 
