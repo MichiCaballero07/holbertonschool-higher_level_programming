@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Import data"""
+"""data"""
 
 
 import sys
