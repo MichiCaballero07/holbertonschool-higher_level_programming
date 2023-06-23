@@ -8,6 +8,6 @@ def append_write(filename="", text=""):
         start_pos = file.tell()
         file.write(text)
         end_pos = file.tell()
-        num_characters_added =end_pos - start_pos
-        
+        num_characters_added = end_pos - start_pos
+
     return num_characters_added
