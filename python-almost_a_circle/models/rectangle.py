@@ -1,58 +1,57 @@
 #!/usr/bin/python3
-"""import"""
-
+'''import the class base'''
 
 from models.base import Base
 
 
-"""Rectangle class"""
+'''Rectangle'''
 
 
 class Rectangle(Base):
-    '''Base class for Rectangles'''
+    '''Class Resctangle inherited from Base'''
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.___width = width
-        self.___height = height
+        self.__width = width
+        self.__height = height
         self.__x = x
         self.__y = y
         super().__init__(id)
 
-    '''access to width'''
+    '''Access to width'''
     @property
     def width(self):
         return self.__width
 
-    '''adding value to width'''
+    '''add value to width'''
     @width.setter
     def width(self, value):
         self.__width = value
 
-    '''access to height'''
+    '''Access to height'''
     @property
     def height(self):
         return self.__height
 
-    '''adding value to height'''
+    '''add value to height'''
     @height.setter
     def height(self, value):
         self.__height = value
 
-    '''access to x'''
+    '''Access to x'''
     @property
     def x(self):
         return self.__x
 
-    '''adding value to x'''
+    '''add value to x'''
     @x.setter
     def x(self, value):
         self.__x = value
 
-    '''access to y'''
+    '''Access to y'''
     @property
     def y(self):
         return self.__y
 
-    '''adding value to y'''
+    '''add value to y'''
     @y.setter
     def y(self, value):
         self.__y = value
