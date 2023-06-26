@@ -20,39 +20,39 @@ class Rectangle(Base):
     '''access to width'''
     @property
     def width(self):
-        return self._width
+        return self.__width
 
     '''adding value to width'''
     @width.setter
     def width(self, value):
-        self._width = value
+        self.__width = value
 
     '''access to height'''
     @property
     def height(self):
-        return self._height
+        return self.__height
 
     '''adding value to height'''
     @height.setter
     def height(self, value):
-        self._height = value
+        self.__height = value
 
     '''access to x'''
     @property
     def x(self):
-        return self._x
+        return self.__x
 
     '''adding value to x'''
     @x.setter
     def x(self, value):
-        self._x = value
+        self.__x = value
 
     '''access to y'''
     @property
     def y(self):
-        return self._y
+        return self.__y
 
     '''adding value to y'''
     @y.setter
     def y(self, value):
-        self._y = value
+        self.__y = value
