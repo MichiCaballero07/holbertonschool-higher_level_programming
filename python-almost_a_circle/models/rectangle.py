@@ -85,8 +85,10 @@ class Rectangle(Base):
     '''function that prints stdout'''
     def display(self):
         '''print stdout " # "'''
+        for _ in range(self.__y):
+            print()
         for _ in range(self.__height):
-            print('#' * self.__width)
+            print(' ' * self.__x + '#' * self.__width)
 
     '''funtion that str'''
     def __str__(self):
