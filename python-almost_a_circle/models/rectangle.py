@@ -97,7 +97,7 @@ class Rectangle(Base):
             .format(self.id, self.x, self.y, self.width, self.height)
 
     '''funtion that Update'''
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''assigns an argument to each attribute'''
         if len(args) >= 1:
             self.id = args[0]
@@ -109,3 +109,11 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) >= 5:
             self.y = args[4]
+
+        if len(args) > 0:
+            attrs = ['id', 'width', 'height', 'x', 'y']
+            for i, value in enumerate(args):
+                setattr(self, attrs[i], value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
