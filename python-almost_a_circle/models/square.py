@@ -26,6 +26,7 @@ class Square(Rectangle):
 
     '''funtion update'''
     def update(self, *args, **kwargs):
+        '''conditional update'''
         if args:
             if len(args) >= 1:
                 self.id = args[0]
