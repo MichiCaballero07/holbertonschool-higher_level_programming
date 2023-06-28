@@ -21,9 +21,9 @@ class TestRectangle(unittest.TestCase):
     def test_invalid_width_type(self):
         with self.assertRaises(TypeError):
             Rectangle("1", 2)
-    # def test_invalid_height_type(self):
-    #     with self.assertRaises(TypeError):
-    #         Rectangle(1, "2")
+    def test_invalid_height_type(self):
+        with self.assertRaises(TypeError):
+            Rectangle(1, "2")
     def test_invalid_x_type(self):
         with self.assertRaises(TypeError):
             Rectangle(1, 2, "3")
