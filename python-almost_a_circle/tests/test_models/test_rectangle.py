@@ -202,6 +202,3 @@ if __name__ == '__main__':
 #         self.assertEqual(r4.x, 3)
 #         self.assertEqual(r4.y, 4)
 #         self.assertEqual(r4.id, 5)
-
-
-    
