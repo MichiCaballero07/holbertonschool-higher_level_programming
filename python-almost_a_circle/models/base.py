@@ -22,15 +22,13 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
     
-    @classmethod
-    def save_to_file(cls, list_objs):
-        '''function to save'''
-    
-            
-            
-            
+    # @classmethod
+    # def save_to_file(cls, list_objs):
+    #     '''function to save'''
+    '''static method'''
     @staticmethod
     def from_json_string(json_string):
+        '''from json'''
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
